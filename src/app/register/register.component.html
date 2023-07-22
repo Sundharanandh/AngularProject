@@ -1,0 +1,25 @@
+<body>
+
+<div class="total-container">
+  <div class="left-box">
+    
+    
+    <p class="kaar-head">Sales Forecasting</p>
+  </div>
+  <div class="right-box">
+    <div class="register-box">
+      <div class="reg-content">
+      <h1 id="reg" class="top-bottom-gap">REGISTER</h1>
+      <input id="userid" class="top-bottom-gap" [(ngModel)]="regname" type="text" placeholder="Username">
+      <div class="userdown"></div>
+      <input id="pwdid" class="top-bottom-gap" [(ngModel)]="regpwd" type="password" placeholder="Password">
+      <div class="pwddown"></div>
+      <div class="mssg">{{message}}</div>
+      <button id="reg-bttn" class="top-bottom-gap" (click)="register_of()">REGISTER</button>
+      <div class="login-cont"><span class="login-word">Already have an account?</span><button id="login-bttn" class="top-bottom-gap" (click)="gotologin()">LOGIN</button></div>
+      </div>  
+    </div>
+
+  </div>
+</div>
+</body>

@@ -1,0 +1,191 @@
+p{
+  color: white;
+}
+
+.total-container{
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  
+  background-image: url('candleui.jpg');
+  background-size: cover;
+
+}
+
+h1{
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  z-index: 13;
+}
+
+.right-box{
+  background-color: #202d3000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.left-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1d222300;
+  height: 100vh;
+  width: 100vw;
+}
+
+.register-box{
+  position: fixed;
+  top: 20;
+  right: 20;
+  background-color: #1d2223;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 60%;
+  width: 20%;
+  min-width: 400px;
+  min-height: 510px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 1em;
+  box-shadow: -5px 0 5px #1d2223;
+  z-index: 13;
+
+
+}
+
+.reg-content{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+h1{
+  color: white;
+}
+
+.top-bottom-gap{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#reg-bttn,#login-bttn{
+  border: solid;
+  color: rgb(34, 183, 199);
+  border-width: 1px;
+  padding: 5px 10px;
+  background-color:#1d2223 ;
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+#reg-bttn:hover,#login-bttn:hover{
+  background-color: rgb(34, 183, 199);
+  transition: ease-in 300ms;
+}  
+
+.userdown,.pwddown{
+  height: 2px;
+  width: 275px;
+  background-color: rgb(34, 183, 199);
+  margin-bottom: 10px;
+
+}
+
+#userid,#pwdid{
+  border: none;
+  color: white;
+  scale:1.4;
+  padding: 5px 10px;
+  background-color:#1d2223 ;
+  outline: none;
+  
+}
+
+#reg{
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+ 
+#reg-bttn{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+#login-bttn{
+  margin-top: 10px;
+  scale:0.8;
+  
+}
+
+
+.login-word{
+  color: rgb(180, 173, 173);
+  margin-right: 10px;
+}
+
+.mssg{
+  color:blue;
+}
+
+.pwddown{
+  margin-bottom: 10px;
+}
+
+
+.login-cont{
+  margin-bottom: -40px;
+}
+
+
+.kaar-head{
+  font-size: 60px;
+  margin-bottom: 110px;
+  box-shadow: 5px 5px 5px 1px black;
+  background-color: #1d2223;
+  border-radius: 0.2em;
+  transition: 0.3s;
+  
+
+}
+
+.kaar-1,.kaar-2{
+  font-size: 30px;
+  box-shadow: 5px 5px 5px 1px black;
+  background-color: #1d2223;
+  border-radius: 0.2em;
+  transition: 0.3s;
+  
+
+}
+
+.kaar-1{
+  padding: 10px 30px;
+}
+
+.kaar-2{
+  padding: 10px 85px;
+}
+
+.kaar-1:hover,.kaar-2:hover,.kaar-head:hover{
+  
+  transform: translate(0, -10px);
+}
+
+
+

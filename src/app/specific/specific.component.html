@@ -1,0 +1,155 @@
+<div class="full-container" id="fullclass" #fullclass > 
+  <div class="date-bar">
+    <input #us1 class='bgc'type="date" id="userinput1" name="userinput1" [(ngModel)]="fromdate" required />
+    <input #us2 class='bgc'type="date" id="userinput2" name="userinput2" [(ngModel)]="todate" required />
+     
+    <select #us3 class="bgc" id="typec" #graph (change)="onSelectgraph(graph.value)">
+      <option value="" selected disabled hidden>Select chart type</option> 
+      <option value="line" >Line</option>
+      <option value="bar">Bar</option>
+    </select>
+    <button class="button-mode" id="buttmood" #buttmood (click)="changemode(fullclass,buttmood,us1,us2,us3,us4)">change theme</button>
+  </div>
+  <p #us4 id="chartbutt" class="bgc" (click)="generate_chart()">   
+    Generate chart
+    
+  </p>
+
+  
+  
+
+  <div class="chart-container" [hidden]="chartbool">
+    <div class="chart-bar">
+      <div class="chart" id="one">
+        <canvas id="canvas" >{{ chart }}</canvas>
+
+      </div>
+      <div class="chart" id="two">
+        <canvas id="canvas1" >{{ user_chart}}</canvas>
+
+      </div>
+    </div>
+    <div class="metric-bar" [hidden]="chartbool">
+      <div class="metric">Root Mean Square Error : {{rmse}}</div>
+      <div class="metric">Mean Absolute Percentage Error : {{mape}}</div>
+      <div class="metric">Accuracy : {{accuracy}}</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+  <input type="date" id="userinput1" name="userinput1" [(ngModel)]=fromdate required />
+  <input type="date" id="userinput2" name="userinput2" [(ngModel)]=todate required />
+  <button (click)="generate_chart()">generate chart</button>
+      
+</div>
+
+  
+  
+<div>
+<div>
+    <canvas id="canvas" >{{ chart }}</canvas>
+</div>
+<div [hidden]="statsbool"><button (click)="getstatus()">Get Statistics</button></div>
+<div [hidden]="stats_contnt_bool">
+  <div>Root Mean Square Error : {{rmse}}</div>
+  <div>Mean Absolute Percentage Error : {{mape}} </div>
+  <div>Accuracy : {{accuracy}}</div>
+</div>
+
+<div>
+    <canvas id="canvas1" >{{ user_chart}}</canvas>
+</div>
+
+</div>
+
+
+
+
+<div class="container">
+  <div class="one">
+    <div class="oneone">
+      <input type="date" id="userinput1" name="userinput1" [(ngModel)]=fromdate required />
+    </div>
+    <div class="onetwo">
+      <input type="date" id="userinput2" name="userinput2" [(ngModel)]=todate required />
+    </div>
+  </div>
+  <div class="two">
+    <div class="twoone">
+      <button class="getch" (click)="generate_chart()" [hidden]="getcbool">GetChart</button>
+    </div>
+  </div>
+  <div class="three" [hidden]="chartbool">
+    <div class="threeone">
+      <canvas id="canvas" >{{ chart }}</canvas>
+    </div>
+    <div class="threetwo">
+      <canvas id="canvas1" >{{ user_chart}}</canvas>
+    </div>
+  </div>
+  <div class="four">
+    <div class="fourone" [hidden]="chartbool">
+      Root Mean Square Error : {{rmse}}
+    </div>
+    <div class="fourtwo" [hidden]="chartbool">
+      Mean Absolute Percentage Error : {{mape}}
+    </div>
+    <div class="fourthree" [hidden]="chartbool">
+      Accuracy : {{accuracy}}
+    </div>
+  </div>
+</div>  -->

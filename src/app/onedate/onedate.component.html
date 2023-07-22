@@ -1,0 +1,10 @@
+<div class="container" #fullclass>
+  
+
+  <div class="box">
+    <h1>Sales for Specified Date</h1>
+    <div><input type="date" id="userinput1" name="userinput1" [(ngModel)]=particular_date required /></div>
+    <button class="sales-butt" (click)="particular_sales()">generate sales</button>
+    <div>{{m}}</div>
+  </div>
+</div>

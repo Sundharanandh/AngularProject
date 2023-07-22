@@ -1,0 +1,62 @@
+ .container{
+  background-image: url('rainbow.jpg');
+  background-size: cover;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ h1{
+  font-weight: bold;
+
+ }
+
+ .one{
+  position: relative;
+  top: -200px;
+ }
+
+ .butt{
+  background-color: rgb(16, 191, 239);
+  height: 50px;
+  width: 200px;
+  border-radius: 1em;
+  transition: ease-in-out 300ms;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+ }
+
+ .butt:hover{
+  background-color: white;
+ }
+
+
+ p{
+  background-color: black;
+  color: white;
+  transition: ease-in-out 300ms;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0.3em;
+ }
+
+ p:hover{
+  background-color: white;
+  color: black;
+ }
+
+ .three{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

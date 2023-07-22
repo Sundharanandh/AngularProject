@@ -1,0 +1,41 @@
+
+<div class="container">
+  <div class="first">
+    <div class="first-div">
+      <div class="spec-dates">
+        <button class="common" (click)="specific()">
+          <img style="height:140px ;width:150px;" src="assets/dates.jpg" alt="">
+          <div>Specific dates</div>
+          <br>
+          <div>Here you can specify the dates between which you need to find the prediction and the model will train accordingly</div>
+        </button>
+      </div>  
+    </div>
+    <div class="second-div">
+      <div class="predict">
+        <button class="common" (click)="predictfromnow()">
+          <img style="height:120px ;width:190px;" src="assets/hour.jpg" alt=""> <br>
+          <div>Predict from Present</div><br>
+          <div>Here you can specify the number of days or weeks or months based on your requirement and the model will give you the prediction from today till the specified number of days</div>
+        </button>
+      </div>   
+    </div>
+  </div>
+  <div class="second">
+    <div class="one-div">
+      <div class="one-date">
+        <button class="common" (click)="certain_date()">
+          <img style="height:140px ;width:170px;" src="assets/single.jpg" alt="">
+          <div>Certain Date</div> <br>
+          <div> It's merely a give and take policy where you can give a particular date and it pops you the predicted sale on that particular date</div>
+          <div [hidden]="certain_bool">
+            <div><input type="date" id="userinput1" name="userinput1" [(ngModel)]=particular_date required /></div>
+            <button class="sales-butt" (click)="particular_sales()">generate sales</button>
+            <div>{{m}}</div>
+          </div>
+        </button>
+      </div>  
+      
+    </div>
+  </div>
+</div>
